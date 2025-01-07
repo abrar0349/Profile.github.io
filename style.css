@@ -1,0 +1,552 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body{
+    /* background-color: bisque; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 95vw; */
+}
+ h2{
+    font-size: 2em;
+}
+ h2 span{
+    color: #E14949;
+}
+button{
+    background-color: #E14949;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #E14949;
+    padding-inline: 30px;
+    padding-block: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+ button:hover{
+ color: black;
+ background-color: white;
+ border: 2px solid #E14949;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-block: 15px;
+}
+ .logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+nav .logo i{
+    font-size: 35px;
+    display: none;
+}
+nav ul{
+    flex: 6;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    padding-right: 5%;
+    color: white;
+    font-size: 20px;
+    z-index: 999;
+}
+nav ul li{
+    cursor: pointer;
+}
+nav ul .active{
+    color : #E14949;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color : #E14949;
+}
+/* navbar end  */
+.section-1{
+    display: flex;
+    padding-top: 50px;
+    background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26));
+}
+.section-1 .name{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    gap: 1px;
+}
+.section-1 .name h2{
+    font-size: 1.2em;
+    position: relative;
+    top: -10;
+}
+.section-1 .img{
+    height: 600px;
+    background: url('./pic1.jpg');
+    background-size: 100% 100%;
+    flex: 1;
+    flex-shrink: 8;
+}
+/* section 2 start from here  */
+.section-2{
+    padding-block: 5%;
+    display: flex;
+}
+.section-2 .profile{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.section-2 .profile img{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+    4px 6px 20px rgba(0, 0, 0, 0.19);
+}
+.section-2 .details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+.section-2 .details p{
+    color: gray;
+    line-height: 2em;
+    width: 90%;
+}
+.section-2 .details .skills{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+}
+.section-2 .details .skills h6{
+    font-size: 15px;
+}
+
+
+/* section 3 start from here  */
+
+.section-3{
+    background-color: #f9f9f9;
+    padding-block: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 5%;
+}
+.section-3 .proj{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.section-3 .proj .pic:hover{
+    background-color: rgb(231, 227, 227);
+    position: relative;
+    z-index: 50;
+}
+
+.section-3 .Image1{
+    background-image: url('./pic1.jpg');
+}
+.section-3  .Images{
+    width: 30%;
+    height: 50vh;
+    cursor: pointer;
+    background-size: cover;
+    position: relative;
+}
+.section-3  .Images .Shadow{
+    color: transparent;
+    font-weight: 800;
+    position: absolute;
+    bottom: -18%;
+    transition: all 1s;
+}
+.section-3  .Images:hover .Shadow{
+    color: white;
+    bottom: 10%;
+    left: 8%;
+}
+
+/* section 4 start there */
+.section-4{
+    width: 90%;
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.section-4 .first{
+    height: 20em;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('./background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-4 .first h3{
+    font-size: 2.5em;
+    overflow-wrap: break-word;
+}
+.section-4 .first h3 span{
+    visibility: visible;
+}
+.section-4 .first h4{
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.section-4 .first h4:hover{
+    border-bottom: 2px solid white;
+}
+.section-4 .second{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-4 .proj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+.section-4 .second .proj .card{
+ width: 30%;
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ text-align: center;
+ overflow: hidden;
+}
+.section-4 .second .proj .card img{
+    width: 100%;
+    height: 300px;   
+    transition: all 0.5s;
+}
+.section-4 .second .proj .card img:hover{
+    scale: 1.1;
+}
+.section-4 .second .proj .card h3:hover{
+    color: #E14949;
+}
+
+/* section 5 start now  */
+.section-5{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 8%;
+}
+.section-5 .form{
+    display: flex;
+}
+.section-5 .form .formIcon{
+    flex: 1;
+}
+.section-5 .form .formIcon .myDetails{
+    display: flex;
+    gap: 50px;
+    align-items: start;
+}
+.section-5 .form .formIcon .myDetails div{
+    font-weight: bold;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-5 .form form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* footer section code  */
+footer{
+    background-color: black;
+    margin-top: 5%;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  
+footer div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#child{
+    height: 50%;
+    width: 100%;
+}
+footer .logo{
+    display: flex;
+    justify-content: flex-start;
+}
+footer .social-logo{
+    justify-content: space-between;
+}
+
+
+@media (min-width:550px) and (max-width:938px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .logo{
+        justify-content: space-between;
+        padding-inline: 10%;
+    }
+    nav .logo i{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        position: fixed;
+        height: 100vh;
+        top: 8%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26));
+        z-index: 999;
+    }
+    .show{
+        display: flex;
+    }
+    /* navbar code end here  */
+    .section-1{
+        padding-top: 10%;
+    }
+    .section-1 .name{
+        flex: 1;
+        font-size: 1.8em;
+        text-align: center;
+        order: 2;
+    }
+    .section-1 .name h2{
+        font-size: 1em;
+        position: relative;
+        top: -10;
+    }
+
+
+    /* section 2 div code start from here  */
+    .section-2{
+        flex-direction: column;
+    }
+    .section-2 .profile{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .section-2 .profile img{
+        width: 90%;
+    }
+    .section-2 .details .skills{
+        width: 100%;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    /* section 3 code written in bottom  */
+    .section-3  .Images{
+        width: 45%;
+    }
+
+    /* section 4 start from here  */
+    .section-4 {
+        padding-inline: 1%;
+    }
+    .section-4 .first{
+        width: 100%;
+    }
+    .section-4 .first h3{
+        width: 50%;
+        font-size: 1.6em;
+    }
+    .section-4 .first h4{
+        font-size: 1.2em;
+    }
+    .section-4 .second .proj .card{
+        width: 40%;
+    }
+
+    /* section 5 code  */
+    .section-5 .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-5 .form .formIcon{
+        margin-bottom: 20%;
+    }
+    .section-5 .form .formIcon .myDetails div{
+        width: 20%;
+    }
+ 
+}
+
+@media only screen and (max-width : 550px){
+    nav{
+        flex-direction: column;
+        padding-block: 0px;
+        padding-top: 3%;
+    }
+    nav .logo{
+        justify-content: space-between;
+        padding-inline: 10%;
+    }
+    nav .logo i{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        position: fixed;
+        height: 100vh;
+        top: 15%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26));
+        z-index: 999;
+    }
+    .show{
+        display: flex;
+    }
+    /* navbar code end here  */
+    .section-1{
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 20%;
+    }
+    .section-1 .name{
+        flex: 1;
+        font-size: 1em;
+        text-align: center;
+        order: 2;
+    }
+    .section-1 .name h2{
+        font-size: 0.8em;
+        position: relative;
+        top: -10;
+    }
+      /* section 2 div code start from here  */
+    .section-2{
+        flex-direction: column;
+    }
+    .section-2 .profile{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .section-2 .profile img{
+        width: 100%;
+    }
+    .section-2 .details .skills{
+        width: 100%;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .section-2 .details p{
+        width: 99%;
+    }
+       /* section 3 code written in bottom  */
+    .section-3  .Images{
+        width: 100%;
+    }
+        /* section 4 start from here  */
+    .section-4{
+        width: 100%;
+    }
+    .section-4 .first{
+        width: 100%;
+        height: 10em;
+
+    }
+    .section-4 .first h3{
+        flex: 1;
+    }
+    .section-4 .first h4{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .section-4 .first h3{
+        font-size: 1em;
+    }
+    .section-4 .first h4{
+        font-size: 0.7em;
+    }
+    .section-4 .second .proj .card{
+        width: 90%;
+    }
+      /* section 5 code  */
+      .section-5 .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-5 .form .formIcon{
+        margin-bottom: 25%;
+    }
+    .section-5 .form .formIcon .myDetails div{
+        width: 30%;
+    }
+    /* footer code  */
+    footer{
+        font-size: 14px;
+        text-align: center;
+    }
+   
+    footer h1{
+        font-size: 20px;
+    }
+    footer .social-logo{
+        padding-inline: 8%;
+        flex: 2;
+        gap: 20%;
+        justify-content: flex-start;
+    }
+}
