@@ -47,7 +47,7 @@
         </div>
 
         <div class="details">
-            <h2>About <span>ME</span></h2>
+            <h2 class = 'h2'>About <span>ME</span></h2>
 
             <p>Hello! I'm Abrar khan. I'm a web developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
 
@@ -66,11 +66,12 @@
 
     <div class="section-3">
 
-        <h2>MY <span>PROJECTS</span></h2>
+        <h2 class = 'h2'>MY <span>PROJECTS</span></h2>
 
 
         <div class="proj">
-            <div class="Images Image1">
+
+             <!-- <div class="Images Image1"> 
                 <div class="Shadow">
                     <h3>Keangnam Grand Hall</h3>
                     <p>2018</p>
@@ -96,7 +97,8 @@
                     <h3>Keangnam Grand Hall</h3>
                     <p>2018</p>
                 </div>
-            </div>
+            </div>  -->
+
         </div>
     </div>
 
@@ -108,12 +110,12 @@
 
         <div class="second">
 
-            <h2>Learning <span>skills</span> </h2>
+            <h2 class = '.h2' id = 'h2'>Learning <span>skills</span> </h2>
 
-            <div class="proj">
+              <div id="proj"> 
 
-                <div class="card">
-                    <img src="./pic1.jpg" alt="">
+                <!-- <div class="card" onclick="productShowOrNot(event)">
+                    <img src="./pic/Reactjs.jpg" alt="">
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel sunt nostrum accusantium laboriosam veniam! Reprehenderit,</h3>
                 </div>
                 <div class="card">
@@ -123,9 +125,9 @@
                 <div class="card">
                     <img src="./pic1.jpg" alt="">
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel sunt nostrum accusantium laboriosam veniam! Reprehenderit,</h3>
-                </div>
+                </div> -->
 
-            </div>
+                </div>  
 
         </div>
 
@@ -179,7 +181,41 @@
         </div>
     </div>
 
+    <div class="detailBox">
+
+        <div class="content">
+
+            <i class="fa-solid fa-x" onclick="productShowOrNot(event)"></i>
+
+            
+            <img src="./pic1.jpg" alt="content" class="iconPic">
+
+            <div class="info">
+
+            <h1 class="skillName"></h1>
+            
+            <p class="title">Nextjs javaScript Library for Full stack</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere veniam inventore mollitia ratione sunt unde debitis pariatur distinctio odit placeat possimus, qui magnam non velit vel corrupti, omnis consectetur natus!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="detailBox1">
+
+        <div class="content">
+            
+            <i class="fa-solid fa-x"  onclick="videoShowOrNot()"></i>
+            
+            <video src="" controls></video>
+        </div>
+
+    </div>
+
+
     <footer>
+
         <div class="water_wave">
 
         </div>
@@ -203,6 +239,7 @@
         </div>
 
     </footer>
+
 </body>
 <script src="./index.js"></script>
 </html>
