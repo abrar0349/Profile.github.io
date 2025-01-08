@@ -18,22 +18,21 @@ setInterval(() => {
 
 
 let productDetail = document.querySelector('.detailBox')
+
 let iconPic = document.querySelector('.iconPic')
 let title =  document.querySelector('.title')
 let SkillName = document.querySelector('.skillName')
+let desc = document.querySelector('.desc')
 
 function productShowOrNot(e , id){
     
     let obj = cardsData.find( (obj) => obj.id === id)
-    console.log(obj)
-    
-    let parent = e.target
-    // console.log(parent)
     
     iconPic.src = obj.imgSrc
     title.innerHTML = obj.title
 
     SkillName.innerHTML = obj.skillName
+    desc.innerHTML = obj.description
 
     productDetail.classList.toggle('visiblite')
 }
@@ -52,19 +51,21 @@ const cardsData = [
       title : 'Reactjs JavaScript Library',
       skillName : 'Reactjs',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel sunt nostrum accusantium laboriosam veniam! Reprehenderit,',
+       "React.js is a JavaScript library for creating interactive user interfaces. It is maintained by Facebook along with a community of individual developers and companies. React uses single-page application (SPA) technology and introduces the concept of 'write once, use multiple times.' It handles routing on the client side, making websites faster and more responsive. With React, websites can update content dynamically without refreshing the entire page.",
+    },
+    {
+      imgSrc: './pic1.jpg',
+      title : 'Nest JavaScript Library for backend',
+      skillName :'Nest js',
+      description:
+        "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It is built with TypeScript and combines the best features of Object-Oriented Programming (OOP), Functional Programming (FP), and Functional Reactive Programming (FRP). Nest.js leverages powerful frameworks like Express.js or Fastify under the hood, providing a robust architecture for building modern, maintainable back-end applications. Its modular structure, dependency injection, and built-in support for features like middleware, authentication, and database integration make it a popular choice for creating RESTful APIs and microservices.",
     },
     {
       imgSrc: './pic1.jpg',
       title : 'Next JavaScript Library for full stack',
       skillName :'Next js',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel sunt nostrum accusantium laboriosam veniam! Reprehenderit,',
-    },
-    {
-      imgSrc: './pic1.jpg',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel sunt nostrum accusantium laboriosam veniam! Reprehenderit,',
+       "Next.js is a React-based framework built on top of the React library, designed to enhance the development of modern web applications. It significantly improves SEO capabilities compared to React.js, offering features like server-side rendering (SSR) and static site generation (SSG), which optimize search engine visibility. Next.js extends beyond the client side, enabling server-side development, making it a versatile choice for both front-end and back-end applications. Additionally, it seamlessly integrates into the MERN stack, providing a comprehensive solution for full-stack development without requiring additional learning.",
     },
   ];
 
@@ -87,7 +88,8 @@ const cardsData = [
 
 
     const h3 = document.createElement('h3');
-    h3.textContent = cardData.description;
+    h3.textContent = cardData.title;
+    // h3.className = 'title'
   
     cardDiv.appendChild(img);
     cardDiv.appendChild(h3);
@@ -101,11 +103,11 @@ const cardsData = [
     projDiv.appendChild(cardDiv);
   });
 
-// Select the parent element where new content will be added
+
 let myPro = document.querySelector('.proj');
 myPro.className = 'proj'
 
-// Data for dynamic creation
+
 const imagesData = [
   { id : 1 , title: 'Keangnam Grand Hall', year: '2018' },
   { id : 2 , title: 'Keangnam Grand Hall', year: '2018' },
@@ -148,6 +150,8 @@ detailBox1.className = 'detailBox1'
 
  function videoShowOrNot(id ){
     // console.log(id ,'this is id for video component')
+
+    let obj = imagesData.find( (obj) => obj.id === id)
 
     detailBox1.classList.toggle('visiblite1')
  }

@@ -68,11 +68,15 @@ nav ul{
 nav ul li{
     cursor: pointer;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
 nav ul .active{
     color : #E14949;
     cursor: pointer;
 }
-nav ul li:hover{
+nav ul li a:hover{
     color : #E14949;
 }
 /* navbar end  */
@@ -427,6 +431,9 @@ footer .social-logo{
 @media (min-width:550px) and (max-width:938px) {
     nav{
         flex-direction: column;
+        /* border: 2px solid yellow;
+        padding-top: 1%;
+        padding-bottom:60px ; */
     }
     nav .logo{
         justify-content: space-between;
@@ -443,7 +450,7 @@ footer .social-logo{
         gap: 8%;
         position: fixed;
         height: 100vh;
-        top: 8%;
+        top: 12%;
         left: 0;
         bottom: 0;
         right: 0;
@@ -539,7 +546,8 @@ footer .social-logo{
     nav{
         flex-direction: column;
         padding-block: 0px;
-        padding-top: 3%;
+        /* padding-top: 1%; */
+        /* padding-bottom:20px ; */
     }
     nav .logo{
         justify-content: space-between;
@@ -553,10 +561,10 @@ footer .social-logo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 8%;
+        gap: 10%;
         position: fixed;
         height: 100vh;
-        top: 15%;
+        top: 9%;
         left: 0;
         bottom: 0;
         right: 0;
@@ -570,7 +578,7 @@ footer .social-logo{
     .section-1{
         flex-direction: column;
         height: 100vh;
-        padding-top: 20%;
+        padding-top: 12%;
     }
     .section-1 .name{
         flex: 1;
