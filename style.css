@@ -102,7 +102,7 @@ nav ul li a:hover{
 }
 .section-1 .img{
     height: 600px;
-    background: url('./pic1.jpg');
+    background: url('./pic/Abrar.jpeg');
     background-size: 100% 100%;
     flex: 1;
     flex-shrink: 8;
@@ -313,7 +313,6 @@ footer div{
     align-items: center;
 }
 #child{
-    /* height: 50%; */
     flex: 1;
     width: 100%;
 }
@@ -434,6 +433,8 @@ footer .water_wave {
     flex: 2;
     position: relative;
     width: 100%;
+    height: 80%;
+    /* border: 2px solid rebeccapurple; */
 }
 footer .water_wave .wave{
     position: absolute;
@@ -441,7 +442,7 @@ footer .water_wave .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url('../wave.png');
+    background-image: url('./pic/wave.png');
     background-size:  1000px 100px;
   }
 footer .water_wave .wave.wave1{
@@ -451,12 +452,42 @@ footer .water_wave .wave.wave1{
     animation-delay: 0s;
     bottom: 0;
   }
+  footer .water_wave .wave.wave2{
+    animation: animate2 4s linear infinite;
+    z-index: 99;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: 10px;
+  }
+  footer .water_wave .wave.wave2{
+    animation: animate3 6s linear infinite;
+    z-index: 99;
+    opacity: 0.7;
+    animation-delay: 0s;
+    bottom: 15px;
+  }
   @keyframes animate {
     0%{
       background-position-x: 0;
     }
     100%{
-      background-position-x: 1000px;
+      background-position-x: -1000px;
+    }
+  }
+  @keyframes animate2 {
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: -1000px;
+    }
+  }
+  @keyframes animate3 {
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: -1000px;
     }
   }
 
