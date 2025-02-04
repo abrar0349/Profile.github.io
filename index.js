@@ -38,6 +38,10 @@ function productShowOrNot(e , id){
     productDetail.classList.toggle('visiblite')
 }
 
+function closeDetail(){
+  productDetail.classList.toggle('visiblite')
+}
+
 let secondDiv = document.querySelector('.second')
 
 const heading = document.querySelector('#h2');
