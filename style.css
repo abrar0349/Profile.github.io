@@ -108,6 +108,7 @@ nav ul li a:hover{
     flex-shrink: 8;
 }
 /* section 2 start from here  */
+
 .section-2{
     padding-block: 5%;
     display: flex;
@@ -116,8 +117,7 @@ nav ul li a:hover{
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center; 
 }
 .section-2 .profile img{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
@@ -169,7 +169,17 @@ nav ul li a:hover{
 }
 
 .section-3 .Image1{
-    background-image: url('./pic1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./pic/Archetecture.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+}
+.section-3 .Image2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./pic/e-commerce.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 .section-3  .Images{
     width: 30%;

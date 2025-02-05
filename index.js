@@ -18,7 +18,7 @@ setInterval(() => {
 
 
 let productDetail = document.querySelector('.detailBox')
-console.log(productDetail)
+// console.log(productDetail)
 
 let iconPic = document.querySelector('.iconPic')
 let title =  document.querySelector('.title')
@@ -156,20 +156,20 @@ myPro.className = 'proj'
 
 
 const imagesData = [
-  { id : 1 , title: 'Keangnam Grand Hall', year: '2018' },
-  { id : 2 , title: 'Keangnam Grand Hall', year: '2018' },
+  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' },
+  { id : 2 , title: 'E-commerce Website', year: '2024' },
   { id : 3 , title: 'Keangnam Grand Hall', year: '2018' },
   { id : 4 , title: 'Keangnam Grand Hall', year: '2018' },
 ];
 
-imagesData.forEach((imageData) => {
+imagesData.forEach((imageData , id) => {
 
   const imagesDiv = document.createElement('div');
-  imagesDiv.className = 'Images Image1';
+  imagesDiv.className = `Images Image${id + 1}`;
 
   imagesDiv.onclick = function () {
     videoShowOrNot(imageData.id , imagesDiv);
-    };
+  };
 
   const shadowDiv = document.createElement('div');
   shadowDiv.className = 'Shadow';
