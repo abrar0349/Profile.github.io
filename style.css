@@ -313,6 +313,7 @@ footer{
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+    padding-inline: 10px;
   }
   
   
@@ -412,7 +413,6 @@ footer .social-logo{
 .detailBox1 .content{
     box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 1px 0 rgba(255, 255, 255, 0.5);
     background-color: black;
-    /* overflow-y: scroll; */
     margin-top: 40px;
     height: 80%;
     width: 60%;
@@ -444,7 +444,7 @@ footer .water_wave {
     position: relative;
     width: 100%;
     height: 80%;
-    /* border: 2px solid rebeccapurple; */
+    background-color: white;
 }
 footer .water_wave .wave{
     position: absolute;
@@ -452,7 +452,7 @@ footer .water_wave .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url('./pic/wave.png');
+    background-image: url('./pic/wave1.png');
     background-size:  1000px 100px;
   }
 footer .water_wave .wave.wave1{
@@ -462,20 +462,20 @@ footer .water_wave .wave.wave1{
     animation-delay: 0s;
     bottom: 0;
   }
-  footer .water_wave .wave.wave2{
+  /* footer .water_wave .wave.wave2{
     animation: animate2 4s linear infinite;
     z-index: 99;
-    opacity: 0.5;
-    animation-delay: 0s;
+    opacity: 0.8;
+    animation-delay: 1s;
     bottom: 10px;
   }
-  footer .water_wave .wave.wave2{
-    animation: animate3 6s linear infinite;
+  footer .water_wave .wave.wave3{
+    animation: animate2 5s linear infinite;
     z-index: 99;
     opacity: 0.7;
-    animation-delay: 0s;
+    animation-delay: 0.3s;
     bottom: 15px;
-  }
+  } */
   @keyframes animate {
     0%{
       background-position-x: 0;
@@ -484,7 +484,7 @@ footer .water_wave .wave.wave1{
       background-position-x: -1000px;
     }
   }
-  @keyframes animate2 {
+  /* @keyframes animate2 {
     0%{
       background-position-x: 0;
     }
@@ -499,7 +499,7 @@ footer .water_wave .wave.wave1{
     100%{
       background-position-x: -1000px;
     }
-  }
+  } */
 
 
 @media (min-width:550px) and (max-width:938px) {

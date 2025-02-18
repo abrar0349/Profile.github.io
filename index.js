@@ -100,13 +100,6 @@ const cardsData = [
       description:
        "Tailwind CSS is a utility-first CSS framework that provides a highly customizable set of low-level utility classes to help developers create modern and responsive web designs. Unlike traditional CSS frameworks like Bootstrap, which offer pre-built components, Tailwind focuses on giving you the building blocks to create custom designs directly in your HTML. Instead of writing custom CSS for every element, you use utility classes such as text-center, bg-blue-500, or px-4 to apply styles directly in the markup. This approach allows for greater flexibility and faster development, as it eliminates the need for writing custom CSS rules or dealing with complex class names. Tailwind also supports responsive design out of the box, making it easy to create layouts that adapt to different screen sizes using responsive utility classes. Additionally, Tailwind's configuration file allows you to extend and modify the default design system, including colors, spacing, typography, and more, making it a great choice for developers who want fine-grained control over their designs without writing a lot of custom code.",
     },
-    // {
-    //   imgSrc: './pic1.jpg',
-    //   title : 'Nest JavaScript Library for backend',
-    //   skillName :'Nest js',
-    //   description:
-    //     "Nest.js is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. It is built with TypeScript and combines the best features of Object-Oriented Programming (OOP), Functional Programming (FP), and Functional Reactive Programming (FRP). Nest.js leverages powerful frameworks like Express.js or Fastify under the hood, providing a robust architecture for building modern, maintainable back-end applications. Its modular structure, dependency injection, and built-in support for features like middleware, authentication, and database integration make it a popular choice for creating RESTful APIs and microservices.",
-    // },
     {
       id : 6,
       imgSrc: './pic/Nextjs.png',
@@ -158,8 +151,6 @@ myPro.className = 'proj'
 const imagesData = [
   { id : 1 , title: 'Website For Archetecture Designer', year: '2023' },
   { id : 2 , title: 'E-commerce Website', year: '2024' },
-  { id : 3 , title: 'Keangnam Grand Hall', year: '2018' },
-  { id : 4 , title: 'Keangnam Grand Hall', year: '2018' },
 ];
 
 imagesData.forEach((imageData , id) => {
