@@ -173,9 +173,14 @@ imagesData.forEach((imageData , id) => {
   const p = document.createElement('p');
   p.textContent = imageData.year;
 
+  const img = document.createElement('img')
+  img.src = './pic/video-icon.png'
+  img.className = 'video-icon'
 
+  shadowDiv.appendChild(img)
   shadowDiv.appendChild(h3);
   shadowDiv.appendChild(p);
+ 
 
   imagesDiv.appendChild(shadowDiv);
 

@@ -200,6 +200,19 @@ nav ul li a:hover{
     bottom: 10%;
     left: 8%;
 }
+.video-icon{
+    width: 20%;
+    /* height: 50px; */
+    /* position: absolute;
+    bottom: 10%; */
+    margin-left: 35%;
+    display: none;
+    /* background-color: #E14949; */
+    transition: all 0s ease-in-out;
+}
+.Images:hover .video-icon{
+    display: block;
+}
 
 /* section 4 start there */
 .section-4{
@@ -304,6 +317,7 @@ nav ul li a:hover{
 }
 
 /* footer section code  */
+
 footer{
     background-color: black;
     margin-top: 5%;
