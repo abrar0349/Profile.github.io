@@ -4,13 +4,11 @@
   box-sizing: border-box;
 }
 body{
-    /* background-color: bisque; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* width: 95vw; */
 }
- .h2{
+.h2{
     font-size: 2em;
 }
 .h2 span{
@@ -28,12 +26,11 @@ button{
     transition: all 0.5s;
     cursor: pointer;
 }
- button:hover{
- color: black;
- background-color: white;
- border: 2px solid #E14949;
+button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #E14949;
 }
-
 nav{
     display: flex;
     background-color: black;
@@ -181,6 +178,12 @@ nav ul li a:hover{
     background-size: 100% 100%;
     background-position: center;
 }
+.section-3 .Image3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./pic/education.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
 .section-3  .Images{
     width: 30%;
     height: 50vh;
@@ -202,12 +205,8 @@ nav ul li a:hover{
 }
 .video-icon{
     width: 20%;
-    /* height: 50px; */
-    /* position: absolute;
-    bottom: 10%; */
     margin-left: 35%;
     display: none;
-    /* background-color: #E14949; */
     transition: all 0s ease-in-out;
 }
 .Images:hover .video-icon{
@@ -261,13 +260,13 @@ nav ul li a:hover{
     gap: 25px;
 }
 .section-4 .second .proj .card{
- width: 30%;
- cursor: pointer;
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- text-align: center;
- overflow: hidden;
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
 }
 .section-4 .second .proj .card img{
     width: 100%;
@@ -280,7 +279,6 @@ nav ul li a:hover{
 .section-4 .second .proj .card h3:hover{
     color: #E14949;
 }
-
 /* section 5 start now  */
 .section-5{
     width: 100%;
@@ -327,10 +325,7 @@ footer{
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    padding-inline: 10px;
-  }
-  
-  
+}
 footer div{
     flex: 1;
     display: flex;
@@ -338,12 +333,14 @@ footer div{
     align-items: center;
 }
 #child{
+    border: none;
     flex: 1;
     width: 100%;
 }
 footer .logo{
     display: flex;
     justify-content: flex-start;
+    padding-left: 10px;
 }
 footer .social-logo{
     justify-content: space-between;
@@ -476,20 +473,7 @@ footer .water_wave .wave.wave1{
     animation-delay: 0s;
     bottom: 0;
   }
-  /* footer .water_wave .wave.wave2{
-    animation: animate2 4s linear infinite;
-    z-index: 99;
-    opacity: 0.8;
-    animation-delay: 1s;
-    bottom: 10px;
-  }
-  footer .water_wave .wave.wave3{
-    animation: animate2 5s linear infinite;
-    z-index: 99;
-    opacity: 0.7;
-    animation-delay: 0.3s;
-    bottom: 15px;
-  } */
+
   @keyframes animate {
     0%{
       background-position-x: 0;
@@ -498,30 +482,11 @@ footer .water_wave .wave.wave1{
       background-position-x: -1000px;
     }
   }
-  /* @keyframes animate2 {
-    0%{
-      background-position-x: 0;
-    }
-    100%{
-      background-position-x: -1000px;
-    }
-  }
-  @keyframes animate3 {
-    0%{
-      background-position-x: 0;
-    }
-    100%{
-      background-position-x: -1000px;
-    }
-  } */
-
+ 
 
 @media (min-width:550px) and (max-width:938px) {
     nav{
         flex-direction: column;
-        /* border: 2px solid yellow;
-        padding-top: 1%;
-        padding-bottom:60px ; */
     }
     nav .logo{
         justify-content: space-between;
@@ -628,14 +593,21 @@ footer .water_wave .wave.wave1{
         height: 70%;
         width: 80%;
     }
+
+    /* footer div  */
+    footer .water_wave .wave{
+        background-image: none;
+    }
+    footer .water_wave .wave.wave1{
+        animation: none;                       ;
+    }
+    
 }
 
 @media only screen and (max-width : 550px){
     nav{
         flex-direction: column;
         padding-block: 0px;
-        /* padding-top: 1%; */
-        /* padding-bottom:20px ; */
     }
     nav .logo{
         justify-content: space-between;
@@ -757,7 +729,16 @@ footer .water_wave .wave.wave1{
         gap: 20%;
         justify-content: flex-start;
     }
+   
+    footer .water_wave .wave{
+        background-image: none;
+    }
+    footer .water_wave .wave.wave1{
+        animation: none;                       ;
+    }
+        
     /* footer end  */
+
     .detailBox .content{
         height: 50%;
         width: 90%;

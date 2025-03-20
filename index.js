@@ -1,12 +1,10 @@
 let navItems = document.querySelector('nav ul')
 
-
 function hideMenuOfNav(){
     navItems.classList.toggle('show')
 }
 
 let lineVisible = document.querySelector('.section-4 .first h3 span')
-
 
 setInterval(() => {
     if(lineVisible.style.visibility == 'hidden'){
@@ -16,9 +14,7 @@ setInterval(() => {
     }
 },1000)
 
-
 let productDetail = document.querySelector('.detailBox')
-// console.log(productDetail)
 
 let iconPic = document.querySelector('.iconPic')
 let title =  document.querySelector('.title')
@@ -151,6 +147,7 @@ myPro.className = 'proj'
 const imagesData = [
   { id : 1 , title: 'Website For Archetecture Designer', year: '2023' },
   { id : 2 , title: 'E-commerce Website', year: '2024' },
+  { id : 3 , title: 'Short Courses online Website', year: '2025' },
 ];
 
 imagesData.forEach((imageData , id) => {
